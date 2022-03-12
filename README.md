@@ -1,1 +1,1 @@
-# JavaScript-Practice
+# JavaScript-Practice This repository has Javascript concepts to practice with its definitions explained in lucid way.It also has the examples to understand with all the necessary comments and solutions. 
