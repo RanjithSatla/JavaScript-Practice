@@ -1,11 +1,11 @@
 /* 
 1.First-Class Functions : In Js all the functions are treated as first class functions.
 ->It means functions are just values
-->Means there are just type of objects.
+->Means they are just type of objects.
 */
 
 /*
-Higher Order Functions : A function is considered as a Higher order function if it accepts another funtion as a callback function or it returns a function or both.
+2.Higher Order Functions : A function is considered as a Higher order function if it accepts another funtion as a callback function or it returns a function or both.
 ->This is because functions being first-class functions.
 ->Helps in abstraction , deligating some works to other functions thereby hiding  the process of o/p thus higer order functions becoming result oriented.
 */
@@ -30,3 +30,16 @@ const transformer = (str, fn) => {
 transformer("Practicing Javascript makes me feel good", upperFirstWord); //Transformed Str : PRACTICING Javascript makes me feel good
 
 transformer("Practicing Javascript makes me feel good", oneWord); //Transformed Str : practicingjavascriptmakesmefeelgood
+
+///// FUNCTION RETURNING OTHER FUNCTION /////
+
+const greet = (greeting) => {
+  return (name) => {
+    console.log(`${greeting} ${name}`);
+  };
+};
+
+const greeterHey = greet("Hey"); //greeterHey is now the name of returned function
+
+greeterHey("Ram"); //Hey Ram
+greet("Hey")("Manas"); //Hey Manas
