@@ -18,7 +18,7 @@ console.log(fruits);      // [ 'mango', 'banana', 'pine apple', 'grapes' ]
 //////  UNSHIFT METHOD //////
 
 
-//Unshift : Adds an element to the begining of an array.
+//Unshift : Adds an element to the begining of an array, returns the length of the new array.
 
 fruits.unshift("guava");
 console.log(fruits);  // [ 'guava', 'Strawberry', 'banana', 'pine apple', 'grapes' ]
@@ -26,9 +26,43 @@ console.log(fruits);  // [ 'guava', 'Strawberry', 'banana', 'pine apple', 'grape
 
 
 
+
+
+
+
 //////  POP METHOD //////
 
-//Pop : Removes last 
+//Pop : Removes last element from an array, returns the removed element.
+const popped = fruits.pop();
+console.log(popped);
+console.log(fruits);
+
+
+//////  SHIFT METHOD //////
+
+
+//Shift : Removes an element to the begining of an array, returns the lremoved element.
+
+const removed = fruits.shift();
+console.log(removed);
+console.log(fruits);  // [ 'guava', 'Strawberry', 'banana', 'pine apple', 'grapes' ]
+
+
+
+//////  INDEXOF METHOD //////
+
+//Indexof : Returns the index of the required array element, -1 if not present.
+
+console.log(fruits.indexOf("banana"));  // 1
+console.log(fruits.indexOf("gauva"));  // -1
+
+
+//////  INCLUDES METHOD //////
+
+//Includes : Returns true if value is present and false if not.
+
+console.log(fruits.includes("banana"));  // true.
+console.log(fruits.includes("gauva"));   // false
 
 
 
@@ -40,7 +74,7 @@ let arr = ["a", "b", "c", "d", "e", "f"];
 console.log(arr.slice(2)); // [ 'c', 'd', 'e', 'f' ]
 console.log(arr.slice(2, 4)); // [ 'c', 'd' ]
 console.log(arr.slice(-2)); // [ 'e', 'f' ]
-console.log(arr.slice(1, -2)); // [ 'b', 'c', 'd' ]
+console.log(arr.slice(1, -2)); // [ 'b', 'c', 'd' 
 console.log(...arr); // a b c d e f
 
 //////  SPLICE METHOD //////
