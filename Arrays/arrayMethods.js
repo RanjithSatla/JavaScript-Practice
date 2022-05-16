@@ -2,6 +2,36 @@
 Arrays : Arrays are also objects in JavaScript, So it has built-in methods attached to it.
 */
 
+
+//////  PUSH METHOD //////
+
+//Push : Add elements to the end of the array, returns the length of the new array.
+
+const fruits = ["mango", "banana", "pine apple"];
+let newLength = fruits.push("grapes");
+fruits[0] = "Strawberry"
+console.log(newLength);    //4
+console.log(fruits);      // [ 'mango', 'banana', 'pine apple', 'grapes' ]
+
+
+
+//////  UNSHIFT METHOD //////
+
+
+//Unshift : Adds an element to the begining of an array.
+
+fruits.unshift("guava");
+console.log(fruits);  // [ 'guava', 'Strawberry', 'banana', 'pine apple', 'grapes' ]
+
+
+
+
+//////  POP METHOD //////
+
+//Pop : Removes last 
+
+
+
 //////  SLICE METHOD //////
 
 // Slice : To extract a substring from a string , Doesn't mutate Orginal String, always returns new string, indexOf method is useful here. Used to create shallow copy of an array.
