@@ -35,3 +35,28 @@ else {
 }
 
 //OP : Height not provided by the user ; Weird case which caused  due to type coerciosn as O is a falsy value.
+
+
+/*
+/// Continue and Break  ////
+
+Continue : Continueb keyword in looping stops the current iteration and continue with the next iteration.
+Break : Break Keyword in looping terminates the looping completely.
+
+*/
+
+
+
+const person = ["John","Ivanka",33,"USA" ];
+
+//Log only strings : 
+
+for (let i=0;i<person.length;i++)  {
+    if(typeof person[i] != "string") continue;
+    console.log(person[i]);  // John  Ivanka  USA
+}
+
+for (let i=0;i<person.length;i++)  {
+    if(typeof person[i] == "number") break;
+    console.log(person[i]);   // John Ivanka
+}
