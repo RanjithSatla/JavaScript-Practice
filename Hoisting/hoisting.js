@@ -11,17 +11,19 @@ console.log(x); // 2
 
 i.All the variables hold undefined as the value so when called before intialisation undefined is returned.
 ii.In case of functions entire function code is available, So functions return the actual value inside it.
-iii.Variable declarations with var keyword is hoisted but let & const are not hoisted because they are in their Temporal Dead Zone.
+iii.Variable declarations with var keyword is hoisted but let & const are hoisted but show cannot use before initialisation because they are in their Temporal Dead Zone.
 */
 
 getBook("Alchemist"); //The book name is Alchemist
 console.log(z); // undefined.
+console.log(p); // ReferenceError: Cannot access 'p' before initialization
 // console.log(y); // ReferenceError: Cannot access 'y' before initialization
 
 function getBook(book) {
   console.log("The book name is", book);
 }
 
+const p = 3;
 let y = 2;
 var z = 3;
 
@@ -38,5 +40,5 @@ TypeError:  getFruit is not a function. Because now getFruit will have the value
 
 ii.let getFruit / const getFruit : 
 ReferenceError: Cannot access 'getFruit' before initialization.
-Because let & const are not hoisted because they are in their Temporal Dead Zone. EC has the variables but only saves the value to the variable after the TDZ i.e only after the initialisation.
+Because let & const are hoisted but show Cannot access before initialization because they are in their Temporal Dead Zone. EC has the variables but only saves the value to the variable after the TDZ i.e only after the initialisation.
 */
