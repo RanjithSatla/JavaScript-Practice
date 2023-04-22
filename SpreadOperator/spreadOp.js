@@ -1,5 +1,5 @@
 /* 
-Spead Operator (..) : Takes individual elements from an array and performs operations 0n all iterables except Objects i.e... Arrays, Strings, Maps, Sets
+Spead Operator (..) : Takes individual elements from an array and performs operations on all iterables except Objects i.e... Arrays, Strings, Maps, Sets
 Uses : 
 1.When building an Array or Passing values to a function
 */
