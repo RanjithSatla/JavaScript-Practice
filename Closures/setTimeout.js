@@ -83,3 +83,45 @@ q();
 //OP :1 2 3 4 5
 
 // Reason : We need to pass new val of i in each iteration. So enclose setTimeout function in a new function and pass the i value each time.
+
+/////////// Examples /////////////
+
+const x = () => {
+  for (var i = 1; i <= 5; i++) {
+    const close = (i) => {
+      setTimeout(() => {
+        console.log(i);
+      }, i * 1000);
+    };
+    // console.log('example')
+    close(i);
+  }
+};
+x();
+
+function outer() {
+  var x = 1; // OP : 1 If commented OP:100
+  function inner() {
+    console.log(x);
+  }
+  return inner;
+}
+var x = 100;
+const example = outer();
+example(); // outer()()
+
+//Data hiding or Encapsulation : Outside the function in Global scope count var cannot be accessed.
+
+function counter() {
+  let count = 0;
+
+  function incCounter() {
+    count++;
+    console.log(count);
+  }
+  incCounter();
+}
+counter();
+// console.log(count)
+
+// counter().
