@@ -53,7 +53,7 @@ counter();
 const cart = ["shoes", "shirts", "pants"];
 
 // There is an api to create order.
-appendFile.createOrder(cart);
+api.createOrder(cart);
 
 /**
  * After the creating order we need to do payment.api.proceedToPayment.
