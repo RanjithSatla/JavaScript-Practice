@@ -1,6 +1,5 @@
 //////// DATA TYPES - 7 //////
- /*
- 
+ `
  1.Numbers : Basically Floating Nos.
 Ex: let age = 23; // Here 23 = 23.0 in actual.
 
@@ -19,7 +18,7 @@ console.log(children); // undefined
 6.Symbol: ES2015, defines a value that is unique and cannot be changed.
 
 7.BigInt : ES2020, Larger integers than Nos can hold.
- */
+ `
 
 
 // typeof Operator : Returns the datatype of the variable.
