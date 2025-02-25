@@ -28,7 +28,7 @@ console.log(typeof jsIsFun); // boolean
 console.log(typeof 23); //number
 console.log(typeof "Donald Trump"); //string
 
-///// Dynamic Typing in JS ///////
+/// --- Dynamic Typing in JS ---- ///
 
 /*
 DYNAMIC TYPING : JS automatically determines the datatype of a value that is stored into a variable.
@@ -49,7 +49,7 @@ console.log(typeof year); // number
 //type of Null
 console.log(typeof null); // object , bug it should show null.
 
-//// Assignments //////
+/// --- Assignments ---- ///
 
 /* 
 1. Declare a variable called 'isIsland' and set its value according to your
@@ -75,7 +75,7 @@ console.log(typeof country);
 console.log(typeof continent);
 console.log(typeof population);
 
-//// Declaring Variables /////
+/// --- Declaring Variables ---- ///
 
 /* 
 1.let : ES6, to mutate a variable, can declare a var and later assign the value and reassin the value, mostly used.
