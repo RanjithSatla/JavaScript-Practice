@@ -1,5 +1,6 @@
 //////// DATA TYPES - 7 //////
- `
+/*
+ 
  1.Numbers : Basically Floating Nos.
 Ex: let age = 23; // Here 23 = 23.0 in actual.
 
@@ -18,16 +19,14 @@ console.log(children); // undefined
 6.Symbol: ES2015, defines a value that is unique and cannot be changed.
 
 7.BigInt : ES2020, Larger integers than Nos can hold.
- `
 
+ */
 
 // typeof Operator : Returns the datatype of the variable.
 let jsIsFun = true;
-console.log(typeof(jsIsFun));  // boolean
-console.log(typeof(23));  //number
-console.log(typeof("Donald Trump"));  //string
-
-
+console.log(typeof jsIsFun); // boolean
+console.log(typeof 23); //number
+console.log(typeof "Donald Trump"); //string
 
 ///// Dynamic Typing in JS ///////
 
@@ -40,18 +39,15 @@ console.log(jsIsFun);  // false
 */
 
 let year;
-console.log(year);   // undefined
-console.log(typeof(year));  // undefined , ie.., both value and type is undefined.
-
+console.log(year); // undefined
+console.log(typeof year); // undefined , ie.., both value and type is undefined.
 
 year = 2022;
-console.log(year);   // 2022
-console.log(typeof(year));  // number
-
+console.log(year); // 2022
+console.log(typeof year); // number
 
 //type of Null
-console.log(typeof(null));  // object , bug it should show null.
-
+console.log(typeof null); // object , bug it should show null.
 
 //// Assignments //////
 
@@ -73,15 +69,12 @@ let population = 131000000;
 
 // console.log(typeof(isIsland,language,country,continent,population)); // Shows only last values type ie.., number
 
-console.log(typeof(isIsland));
-console.log(typeof(language));
-console.log(typeof(country));
-console.log(typeof(continent));
-console.log(typeof(population));
+console.log(typeof isIsland);
+console.log(typeof language);
+console.log(typeof country);
+console.log(typeof continent);
+console.log(typeof population);
 
-
-
- 
 //// Declaring Variables /////
 
 /* 
@@ -100,7 +93,3 @@ Ex: var job = "programmer";
         job = "teacher"   // works.
 
 */
-
-          
-
-
