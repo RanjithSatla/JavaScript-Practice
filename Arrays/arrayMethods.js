@@ -2,33 +2,22 @@
 Arrays : Arrays are also objects in JavaScript, So it has built-in methods attached to it.
 */
 
-
 //////  PUSH METHOD //////
 
 //Push : Add elements to the end of the array, returns the length of the new array.
 
 const fruits = ["mango", "banana", "pine apple"];
 let newLength = fruits.push("grapes");
-fruits[0] = "Strawberry"
-console.log(newLength);    //4
-console.log(fruits);      // [ 'mango', 'banana', 'pine apple', 'grapes' ]
-
-
+fruits[0] = "Strawberry";
+console.log(newLength); //4
+console.log(fruits); // [ 'Strawberry', 'banana', 'pine apple', 'grapes' ]
 
 //////  UNSHIFT METHOD //////
-
 
 //Unshift : Adds an element to the begining of an array, returns the length of the new array.
 
 fruits.unshift("guava");
-console.log(fruits);  // [ 'guava', 'Strawberry', 'banana', 'pine apple', 'grapes' ]
-
-
-
-
-
-
-
+console.log(fruits); // [ 'guava', 'Strawberry', 'banana', 'pine apple', 'grapes' ]
 
 //////  POP METHOD //////
 
@@ -37,34 +26,27 @@ const popped = fruits.pop();
 console.log(popped);
 console.log(fruits);
 
-
 //////  SHIFT METHOD //////
-
 
 //Shift : Removes an element to the begining of an array, returns the lremoved element.
 
 const removed = fruits.shift();
 console.log(removed);
-console.log(fruits);  // [ 'guava', 'Strawberry', 'banana', 'pine apple', 'grapes' ]
-
-
+console.log(fruits); // [ 'guava', 'Strawberry', 'banana', 'pine apple', 'grapes' ]
 
 //////  INDEXOF METHOD //////
 
 //Indexof : Returns the index of the required array element, -1 if not present.
 
-console.log(fruits.indexOf("banana"));  // 1
-console.log(fruits.indexOf("gauva"));  // -1
-
+console.log(fruits.indexOf("banana")); // 1
+console.log(fruits.indexOf("gauva")); // -1
 
 //////  INCLUDES METHOD //////
 
 //Includes : Returns true if value is present and false if not.
 
-console.log(fruits.includes("banana"));  // true.
-console.log(fruits.includes("gauva"));   // false
-
-
+console.log(fruits.includes("banana")); // true.
+console.log(fruits.includes("gauva")); // false
 
 //////  SLICE METHOD //////
 
@@ -74,7 +56,7 @@ let arr = ["a", "b", "c", "d", "e", "f"];
 console.log(arr.slice(2)); // [ 'c', 'd', 'e', 'f' ]
 console.log(arr.slice(2, 4)); // [ 'c', 'd' ]
 console.log(arr.slice(-2)); // [ 'e', 'f' ]
-console.log(arr.slice(1, -2)); // [ 'b', 'c', 'd' 
+console.log(arr.slice(1, -2)); // [ 'b', 'c', 'd'
 console.log(...arr); // a b c d e f
 
 //////  SPLICE METHOD //////
